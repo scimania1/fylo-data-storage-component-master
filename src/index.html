@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <link rel="stylesheet" href="../public/css/style.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="general" role="list">
+        <picture class="logo">
+          <img src="images/logo.svg" alt="Fylo Logo" />
+        </picture>
+        <div class="storage-options">
+          <a href="#" class="option file"
+            ><img src="images/icon-document.svg" alt="document"
+          /></a>
+          <a href="#" class="option folder"
+            ><img src="images/icon-folder.svg" alt="folder-icon"
+          /></a>
+          <a href="#" class="option upload"
+            ><img src="images/icon-upload.svg" alt="upload-icon"
+          /></a>
+        </div>
+      </div>
+      <div class="storage" role="status">
+        <div class="container">
+          <p>
+            You’ve used <span class="storage__current"> 815 GB </span>of your
+            storage 0 GB 1000 GB
+          </p>
+          <div class="progress-bar">
+            <div class="progress__current">
+              <div class="circle"></div>
+            </div>
+            <div class="storage__left">185 GB Left</div>
+          </div>
+          <div class="flex">
+            <p class="storage__min">0 GB</p>
+            <p class="storage__max">1000 GB</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

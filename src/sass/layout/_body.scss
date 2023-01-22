@@ -1,0 +1,10 @@
+body {
+  font-family: var(--ff-primary);
+  font-size: 0.875rem;
+  background: url("/src/images/bg-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  color: var(--clr-secondary-500);
+}

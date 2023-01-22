@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.general {
+  background-color: var(--clr-primary-400);
+  border-radius: 1rem 6rem 1rem 1rem;
+  padding: 3rem;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.storage-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.option {
+  background: var(--clr-primary-500);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.storage {
+  background-color: var(--clr-primary-400);
+}

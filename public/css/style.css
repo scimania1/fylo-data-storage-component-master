@@ -1,0 +1,119 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --clr-primary-400: hsl(228deg, 56%, 26%);
+  --clr-primary-500: hsl(229deg, 57%, 11%);
+  --clr-secondary-400: hsl(243deg, 100%, 93%);
+  --clr-secondary-500: hsl(229deg, 7%, 55%);
+  --ff-primary: "Raleway", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 0.875rem;
+  background: url("/src/images/bg-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  color: var(--clr-secondary-500);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.general {
+  background-color: var(--clr-primary-400);
+  border-radius: 1rem 6rem 1rem 1rem;
+  padding: 3rem;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.storage-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.option {
+  background: var(--clr-primary-500);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.storage {
+  background-color: var(--clr-primary-400);
+}
+
+/*# sourceMappingURL=style.css.map */

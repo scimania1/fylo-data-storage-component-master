@@ -1,0 +1,13 @@
+@use "colors";
+@use "reset";
+
+:root {
+  @each $color, $shades in colors.$colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+  --ff-primary: "Raleway", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
